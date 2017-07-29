@@ -31,10 +31,10 @@ class Header extends Component {
     render() {
 
         return (
-            <Row id="wrapper">
+            <Row id="wrapper" md={12}>
                 <Col id="js-header">
                     <div className="container clearfix">
-                        <PageHeader className="extended-nav-fixed navbar-fixed-top">Cherie Tabb<small>Junior Web Application Developer</small>
+                        <PageHeader className="extended-nav-fixed navbar-fixed-top">Cherie Tabb<small>Web Application Developer</small>
                         </PageHeader>
                     </div>
                 </Col>

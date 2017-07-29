@@ -18,15 +18,17 @@ class Summary extends Component {
         //         Duis amet cillum elit laboris amet officia duis ex labore quis dolore occaecat aute adipisicing. Est sit nisi elit cillum cillum labore ea. Laborum eiusmod qui eiusmod velit et anim irure aliquip sunt ut. Cillum irure cillum eu qui cupidatat adipisicing amet magna ullamco do exercitation excepteur fugiat commodo irure. Est nisi culpa do laborum est dolor eu anim enim voluptate dolore qui veniam.</h3>
         // )));
         //
+        const jrcigarsJobList = ['Complex maintenance to proprietary Node.js MVC e-commerce framework.', 'Add functionality to web pages to improve customer user experience and website efficiency.', 'Analyze customer issues and perform code review to form initial strategy.', 'Integrate, optimized multi data source application functions for large scale product dataset.', 'Manage dynamic email marketing service.']
+
         const pilytixJobList = ['Configured complex node.js micro services MEAN stack application to accept multiple customer CRM data schemas.', 'Worked in an emerging Agile/Scrum methodology.', 'Executed and maintained AWS CodeDeploy jobs tasked with running data transforms.', 'Engineered UI solutions for Salesforce API models.', 'Programmed python scripts to create mlab MongoDB instance reports.'];
 
         const oDAnalystJobList = ['Responsible for tracking of margin growth initiatives.', 'Created and modified queries with Microsoft SQL Server.', 'Used ETL tools, such as SSIS to insert data into database.', 'Used Access and VBA to break up large data for SharePoint workflows.', 'Worked with Regional Performance Managers to find more cost-effective solutions for sales territories.', 'Fulfill ad-hoc requests for data and analysis.'];
 
         const oDSalesJobList = ['Created custom reports and lists and a custom dashboard in Salesforce.com to help build strategy for customer base.', 'Utilized Cognos Query Studio to run sales data.', 'Used formulas and V-Lookup to build workbooks in Microsoft Excel for pricing analysis.', 'Exceeded targeted sales goals by 101%.'];
 
-        const rainmakerJobList = ['Gained 20% program participation rate through high volume prospecting.', 'Tracked and maintain contacts and sales process through CRM tools.'];
-
-        const dellJobList = ['Identified and fulfilled customers’ technology needs through an inbound/outbound call center sales environment, ranked in top 5% out of 400 sales reps.']
+        // const rainmakerJobList = ['Gained 20% program participation rate through high volume prospecting.', 'Tracked and maintain contacts and sales process through CRM tools.'];
+        //
+        // const dellJobList = ['Identified and fulfilled customers’ technology needs through an inbound/outbound call center sales environment, ranked in top 5% out of 400 sales reps.']
 
         return (
             <Grid id="page-content-wrapper">
@@ -35,7 +37,7 @@ class Summary extends Component {
                     {/* <Col md={2}>
                             Summary
                         </Col> */}
-                    <Col id="summary" xs={12} md={12}>
+                    <Col id="summary" md={12}>
                         <h3>
                             Passionate, driven, positive and persistent, I love pair programming, collaborating or figuring things out on my own. I began building a solid sales and service driven background and transitioned into business analytics. Recognizing an ardor for technical and creative problem solving, I started aggressively immersing myself into programming education.
                         </h3>
@@ -77,64 +79,76 @@ class Summary extends Component {
                     <br/>
                 </Row>
                 <Row className="job-list">
-                    <Col>
-                        <h2 className="headlines">Work Experience</h2>
-                    </Col>
-                    <Col className="job-headline" sm={6} md={12}>
-                        <h3>Pilytix</h3>
-                        <h3 style={{
-                            divStyle
-                        }}>Web Application Developer</h3>
-                    </Col>
-                    <Col md={12}>
-                        <ListGroup>
-                            {pilytixJobList.map(pilytxJob => <ListGroupItem className="item">{pilytxJob}</ListGroupItem>)}
+                  <Col>
+                      <h2 className="headlines">Work Experience</h2>
+                  </Col>
+                <Row className="job-list">
+                  <Col className="job-headline" md={9}>
+                    <h3>MC Management | JR Cigars</h3>
+                    <h3 style={{divStyle}}>
+                      Jr. Nodejs Support Engineer
+                    </h3>
+                  </Col>
+                  <Col md={3}>
+                    <h4>Austin, TX</h4>
+                    <h4>05/2017 - Present</h4>
+                  </Col>
+                  <Col md={12}>
+                    <ListGroup>
+                      {jrcigarsJobList.map(jrcigarsJob => <ListGroupItem
+                      className="item">{jrcigarsJob}</ListGroupItem>)}
                     </ListGroup>
-                </Col>
+                  </Col>
+                </Row>
+                <Row className="job-list">
+                  <Col className="job-headline"md={9}>
+                    <h3>Pilytix</h3>
+                    <h3 style={{
+                        divStyle
+                      }}>
+                      Web Application Developer
+                    </h3>
+                  </Col>
+                  <Col md={3}>
+                    <h4>Austin, TX</h4>
+                    <h4>06/2016 - 10/2016</h4>
+                  </Col>
+                  <Col md={12}>
+                    <ListGroup >
+                        {pilytixJobList.map(pilytxJob => <ListGroupItem className="item">{pilytxJob}</ListGroupItem>)}
+                </ListGroup>
+              </Col>
+                </Row>
             </Row>
             <Row className="job-list">
-                <Col className="job-headline" sm={6} md={12}>
+                <Col className="job-headline" md={9}>
                     <h3>Office Depot</h3>
                     <h3>Analyst, Pricing Strategy</h3>
                 </Col>
+                <Col md={3}>
+                    <h4>Austin, TX</h4>
+                    <h4>11/2015 - 06/2016</h4>
+                </Col>
                 <Col md={12}>
-                    <ListGroup>
-                        {oDAnalystJobList.map(oDAnalystJob => <ListGroupItem className="item">{oDAnalystJob}</ListGroupItem>)}
-                    </ListGroup>
+                  <ListGroup>
+                    {oDAnalystJobList.map(oDAnalystJob => <ListGroupItem className="item">{oDAnalystJob}</ListGroupItem>)}
+                  </ListGroup>
                 </Col>
             </Row>
             <Row className="job-list">
-                <Col className="job-headline" md={12}>
-                    <h3>Office Depot</h3>
-                    <h3>Inside Sales Account Manager</h3>
-                </Col>
-                <Col md={12}>
-                    <ListGroup>
-                        {oDSalesJobList.map(oDSalesJob => <ListGroupItem className="item">{oDSalesJob}</ListGroupItem>)}
-                    </ListGroup>
-                </Col>
-            </Row>
-            <Row className="job-list">
-                <Col className="job-headline" md={12}>
-                    <h3>Rainmaker (on contract through Express Employment Professionals)</h3>
-                    <h3>Business Development Associate</h3>
-                </Col>
-                <Col md={12}>
-                    <ListGroup>
-                        {rainmakerJobList.map(rainmakerJob => <ListGroupItem className="item">{rainmakerJob}</ListGroupItem>)}
-                    </ListGroup>
-                </Col>
-            </Row>
-            <Row className="job-list">
-                <Col className="job-headline" md={12}>
-                    <h3>Dell Inc. (on contract through Genesis Networks Inc.)</h3>
-                    <h3>Inside Sales Representative</h3>
-                </Col>
-                <Col md={12}>
-                    <ListGroup>
-                        {dellJobList.map(dellJob => <ListGroupItem className="item">{dellJob}</ListGroupItem>)}
-                    </ListGroup>
-                </Col>
+              <Col className="job-headline" md={9}>
+                <h3>Office Depot</h3>
+                <h3>Inside Sales Account Manager</h3>
+              </Col>
+              <Col md={3}>
+                <h4>Austin, TX</h4>
+                <h4>11/2011 - 11/2015</h4>
+              </Col>
+              <Col md={12}>
+                <ListGroup>
+                  {oDSalesJobList.map(oDSalesJob => <ListGroupItem className="item">{oDSalesJob}</ListGroupItem>)}
+                </ListGroup>
+              </Col>
             </Row>
         </Col>
     </Grid>
